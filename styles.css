@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+/* Mobile Display Format*/
+html {
+  background-color: black;
+  display: grid;
+  font-family: "Montserrat";
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  place-self: center;
+  background-color: white;
+  width: 390px;
+  height: 844px;
+}
+
+/*Header*/
+header {
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  padding-right: 20px;
+  z-index: 2;
+}
+
+header img {
+  width: 20px;
+  margin-top: 2px ;
+
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+header p {
+  position: absolute;
+  top: 0;
+  left: 9px;
+  display: inline-block;
+  font-weight:bold;
+}
+
+header img {
+  position: absolute;
+  top: 0;
+  display: inline-block;
+}
+
+header img:nth-child(1) {
+  right: 60px;
+}
+
+header img:nth-child(2) {
+  right: 40px;
+}
+
+header img:nth-child(3) {
+  right: 60px;
+}
+
+.wifi{
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.signal{
+  margin-right: 10px;
+}
+
+.battery{
+  margin-left: 3px;
+}
+
+/*Image display*/
+
+.arrow{
+  width: 30px;
+  float: left;
+  margin-left: 8px;
+  background-color: #FDFBF4;
+  border-radius: 50%;
+}
+
+.menu{
+  width: 30px;
+  float: right;
+  margin-right: 8px;
+  background-color: #FDFBF4;
+  border-radius: 50%;
+}
+.image {
+  background-image: url('images/ocean-garbage.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 400px;
+  position: relative;  
+  background-color: #E3E3E3;
+  padding-bottom: 150px;
+  padding-top: 50px;
+  z-index: 1;
+}
+
+.image img {
+  max-width: 100%;
+  display: block;
+}
+
+/*Event Info*/
+
+.info, .about, .review, button {
+  margin-top: 20px;
+}
+
+.info{
+  padding-bottom: 60px;
+
+}
+
+.event-name{
+  font-size: 25px;
+  margin-left: 15px;
+  padding-bottom: 10px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+}
+
+.location-div p,
+.calendar-div p,
+.clock-div p,
+.accessability-div p {
+  display: flex;
+  align-items: center;
+}
+
+.location-image,
+.calendar,
+.clock,
+.accessability {
+  margin-right: 10px;
+}
+
+.location-image{
+  width: 20px;
+}
+
+.location-div{
+  margin-left: 15px;
+  padding-bottom: 5px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+}
+
+.calendar{
+  width: 20px;
+}
+
+.calendar-div{
+  float: left;
+  margin-left: 15px;
+  padding-bottom: 5px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+}
+
+.clock-div{
+  float:right;
+  margin-right: 70px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+}
+.clock{
+  width: 20px;
+}
+
+.accessability-div{
+  position: absolute;
+  margin-top: 30px;
+  margin-left: 15px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+}
+.accessability{
+  width: 20px;
+}
+
+/*About event section*/
+
+.about{
+  background-color: #FDFDFC;
+  padding-bottom: 25px;
+}
+.about h1{
+  font-size: 25px;
+  margin-left: 15px;
+  padding-bottom: 10px;
+  padding-top: 15px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+}
+
+.about p{
+  line-height: 1.5;
+  width: 80%;
+  margin-left: 15px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+}
+
+.review{
+  background-color: #FDFDFC;
+  margin-top: 0px;
+  padding-bottom: 25px;
+}
+
+.review h1{
+  font-size: 25px;
+  margin-left: 15px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+}
+
+.rating-container {
+  display: inline-block;
+  font-size: 30px;
+  margin-left: 15px;
+}
+
+.review-statement{
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  margin-left: 15px; 
+  line-height: 1.5;
+}
+
+.review-name{
+  font-family: 'Lato', sans-serif;
+  font-weight: 600;
+  margin-left: 15px; 
+  float: left;
+  padding-top: 5px;
+}
+
+.date{
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  margin-right: 7px;
+  float: right;
+}
+
+/*Event Button*/
+.event-button{
+  align-items: center;
+  background-color: #FDFDFC;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  background-color: #fdca40;
+  border: none;
+  color: black;
+  padding: 20px 100px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 60px;
+  cursor: pointer;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+}

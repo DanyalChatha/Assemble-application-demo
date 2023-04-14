@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+html {
+  background-color: black;
+  display: grid;
+  font-family: "Montserrat";
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  place-self: center;
+  background-color: white;
+  width: 390px;
+  height: 844px;
+}
+
+header {
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  padding-right: 20px;
+}
+
+header img {
+  width: 20px;
+  margin-top: 2px ;
+
+}
+
+header {
+  position: relative;
+}
+
+header p {
+  position: absolute;
+  top: 0;
+  left: 9px;
+  display: inline-block;
+  font-weight:bold;
+}
+
+header img {
+  position: absolute;
+  top: 0;
+  display: inline-block;
+}
+
+header img:nth-child(1) {
+  right: 60px;
+}
+
+header img:nth-child(2) {
+  right: 40px;
+}
+
+header img:nth-child(3) {
+  right: 60px;
+}
+
+
+.w{
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.s{
+  margin-right: 10px;
+}
+
+.b{
+  margin-left: 3px;
+}
+
+.arrow{
+  width: 30px;
+  float: left;
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+.image{
+  padding-top: 50px;
+}
+
+.gif {
+  animation: play 1s infinite;
+  margin-top: 40px;
+  align-items: center;
+  margin-left: 9px;
+}
+
+@keyframes play {
+  from { background-position: 0; }
+  to { background-position: -3840px; }
+}
+
+.text{
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  font-size: 25px;
+  text-align: center;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 50px;
+}
+
+.buttons{
+  padding-top: 40px;
+}
+
+.calendar{
+  background-color: #FFE9AF;
+  border: none;
+  color: black;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  margin: 4px 0px 2px 7px;
+  
+}
+.calendar img{
+  width: 15%;
+}
+
+.share{
+  background-color: white;
+  color: black;
+  padding: 10px 10px;
+  text-align: center;
+  align-items: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+}
+
+.share img{
+  width: 15%;
+}
+
+button {
+    text-align: center;
+    padding: 5px 10px;
+  }
+  
+  button img {
+    vertical-align: middle;
+  }
